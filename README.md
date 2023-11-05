@@ -1,4 +1,4 @@
-# XOR Cipher Program README
+# XOR Cipher Program
 
 ## Description
 This is a Python program for encrypting and decrypting files using the XOR cipher. The XOR cipher is a simple encryption technique that uses bitwise XOR operations to scramble the data. Please note that this encryption method is not suitable for secure applications and should be used for educational purposes only.
