@@ -26,7 +26,7 @@ if __name__ == "__main__":
     output_file = input("Enter the output file location: ").strip()
 
     if action == '1':
-        # Generate a random key of the same size as the input file. 
+        # Generate a random key of the same size as the input file.
         # It is a common practice in one-time pad (OTP) encryption
         # to have a key that is at least as long as the plaintext
         key = generate_random_key(os.path.getsize(input_file))
@@ -40,6 +40,7 @@ if __name__ == "__main__":
         key_file = input("Enter the OTP key file location: ").strip()
         with open(key_file, 'rb') as key_in:
             key = key_in.read()
+        # Decrypt the file here
         xor_decrypt(input_file, output_file, key)
         print("File decrypted")
     else:
